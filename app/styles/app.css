@@ -1,7 +1,9 @@
 header {
+  background-color: white;
   border-style: solid;
   border-color: black;
   border-width: thin;
+  /*color: black;*/
 }
 
 h1 {
@@ -18,4 +20,21 @@ li {
 
 .row {
   text-align: center;
+}
+
+body {
+  background-color: #00514B;
+  /*color: white;*/
+}
+
+.well {
+  /*background-color: #4ABEB5;*/
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+  /*color: black;*/
+}
+
+button {
+  color: black;
 }

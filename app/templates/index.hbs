@@ -1,14 +1,13 @@
-
-  <div class="well">
-    <h1>Welcome to Blog Hut</h1>
-
-    <p>Blog Hut is a place to post and read blogs from around the world.</p>
-  </div>
-
+<br>
+<div class="well">
+  <h1>Welcome to Blogga The Hutt</h1>
+  <p>Blog Hutt is a place to post and read blogs from around the world.</p>
+</div>
+<div class="well">
   <ul>
     {{#each model as |post|}}
     <li>{{post-tile post=post}}</li>
     {{/each}}
   </ul>
-
-  {{new-post savePost="savePost"}}
+</div>
+{{new-post savePost="savePost"}}
