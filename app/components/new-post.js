@@ -9,9 +9,9 @@ export default Ember.Component.extend({
 
     savePost() {
       var params = {
-        author: this.get('author') ? this.get ('author') : "",
-        subject: this.get('subject') ? this.get ('subject') : "",
-        content: this.get('content') ? this.get ('content') : "",
+        author: this.get('author') ? this.get ('author') : "Anonymous",
+        subject: this.get('subject') ? this.get ('subject') : "Things Jon Snow Knows",
+        content: this.get('content') ? this.get ('content') : "Nothing.",
       };
       this.set('addNewPost', false);
       this.sendAction('savePost', params);
