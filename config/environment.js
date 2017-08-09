@@ -24,6 +24,10 @@ module.exports = function(environment) {
     storageBucket: 'blog-58c9d.appspot.com',
   },
 
+
+
+
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
@@ -52,6 +56,23 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
-
+  // module.exports = function(environment) {
+  //   var ENV = {
+  //     /* your config */
+  //
+  //     googleFonts: [
+  //       'Open+Sans+Condensed:300,400,700',
+  //       'Roboto:300'
+  //     ],
+  //
+  //     // Set or update content security policies
+  //     contentSecurityPolicy: {
+  //       'font-src': "'self' fonts.gstatic.com",
+  //       'style-src': "'self' fonts.googleapis.com"
+  //     }
+  //   }
+  //
+  //   return ENV;
+  // }
   return ENV;
 };
