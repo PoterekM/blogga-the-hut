@@ -14,7 +14,8 @@ export default Ember.Component.extend({
         }
       });
       comment.save();
-      this.transitionTo('post');
+      //I am confused as to why the line below is unnecessary. 
+      // this.transitionTo('post');
     }
   }
 });
