@@ -5,9 +5,18 @@
 </div>
 <div class="well">
   <ul>
-    {{#each model as |post|}}
+    {{#each model.posts as |post|}}
     <li>{{post-tile post=post}}</li>
     {{/each}}
   </ul>
 </div>
 {{new-post savePost="savePost"}}
+
+<h2>Comments</h2>
+<ul>
+  {{#each model.comments as |comment|}}
+  <li>"{{comment.word}}" by {{comment.name}}</li>
+  {{/each}}
+</ul>
+
+{{new-comment saveComment="saveComment"}}
