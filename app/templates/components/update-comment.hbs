@@ -1,0 +1,18 @@
+{{#if updateCommentForm}}
+<h2>Update {{comment.name}}'s comment</h2>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      {{input value=name id="name" placeholder=comment.name}}
+    </div>
+    <div class="form-group">
+      <label for="word">Comment</label>
+      {{textarea value=word id="word" placeholder=comment.word}}
+    </div>
+    <button {{action 'update' comment}}>Save</button>
+  </form>
+</div>
+{{else}}
+  <button {{action 'updateCommentForm'}}>Update Comment</button>
+{{/if}}
